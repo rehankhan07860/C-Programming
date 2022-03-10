@@ -1,28 +1,31 @@
 #include<stdio.h>
 int main()
 {
-    char operation;
-    double n1, n2;
-    printf("Enter the operator:");
-    scanf("%c", &operation);
-    printf("Enter the two no:");
-    scanf("%lf", &n1, &n2);
-    switch (operation)
+    int day = 1;
+    switch (day)
     {
-    case '+':
-    printf("%.1lf + %.1lf = %.1lf", n1, n2, n1+n2);
+    case 1:
+    printf("Sunday");
         break;
-    case '-':
-    printf("%.1lf - %.1lf = %.1lf", n1, n2, n1-n2);
+    case 2:
+    printf("Monday");
+    break;
+    case 3:
+    printf("Tuesday");
+    break;
+    case 4:
+    printf("Wednesday");
+    break ;
+    case 5:
+    printf("Thursday");
+    break;
+    case 6:
+    printf("Friday");
+    break;
+    case 7:
+    printf("Saturday");
         break;
-    case '*':
-    printf("%.1lf * %.1lf = %.1lf", n1, n2, n1*n2);
-    break;
-    case '/':
-    printf("%.1lf / %.1lf = %.1lf", n1, n2, n1/n2);
-    break;
-    
-    default:
-      printf("This is error not define");
+        default:
+        printf("any day");
     }
 }
